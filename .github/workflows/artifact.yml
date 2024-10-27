@@ -18,3 +18,10 @@ jobs:
       with:
         name: hello-artifact
         path: hello.txt
+    - name: download artifact
+      uses: actions/download-artifact@v4.1.8
+      with:
+        name: hello-artifact
+    - name: cat artifact
+      run: cat hello.txt
+    
