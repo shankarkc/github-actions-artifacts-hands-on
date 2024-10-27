@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-    - name: download artifact
+    - name: Download text file
       uses: actions/download-artifact@v4.1.8
       with:
         name: hello-artifact
